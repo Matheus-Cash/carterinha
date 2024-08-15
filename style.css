@@ -1,0 +1,88 @@
+input {
+    display: block;
+    margin: auto;
+    font-style: italic;
+    font-size: 17px;
+}
+
+form {
+    background-color: aliceblue;
+    max-width: 80%;
+
+
+    rgin: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Estilo padrão para o título */
+#title {
+    font-size: 2em;
+    color: black;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+/* Estilo quando o mouse passa sobre o título */
+#title.highlight {
+    color: red;
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    /* Impede a barra de rolagem se a bolha sair da tela */
+}
+
+#bubble {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 150, 255, 0.5);
+    /* Cor azul com transparência */
+    border-radius: 50%;
+    /* Torna o elemento redondo */
+    pointer-events: none;
+    /* Impede que o elemento interfira com outros eventos de mouse */
+    transition: transform 0.1s;
+    /* Suaviza o movimento da bolha */
+}
+
+
+body {
+    line-height: 1.5;
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial;
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+    /* Impede a barra de rolagem se a bolha sair da tela */
+    overflow: hidden; /* Para que o ícone não apareça fora da área visível */
+}
+
+h1 {
+    font-size: 3em;
+    color: #333;
+    position: relative;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.animate {
+    transform: translateX(50vw);
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.icon {
+            position: absolute;
+            width: 32px; /* Tamanho do ícone */
+            height: 32px;
+            background-image: url('https://https://www.unirio.br/cch/escoladeturismologia/icone/image.icons8.com/ios-filled/50/000000/cursor.png'); /* Substitua pela URL do seu ícone */
+            background-size: cover;
+            pointer-events: none; /* Para que o ícone não interfira com os eventos do mouse */
+            transition: transform 0.1s ease; /* Suaviza o movimento */
+        }
